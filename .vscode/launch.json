@@ -1,16 +1,17 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
         {
             "type": "lldb",
             "request": "launch",
             "name": "Debug",
-            "program": "${workspaceFolder}/<executable file>",
-            "args": [],
-            "cwd": "${workspaceFolder}"
+            "program": "C:/tools/arcdps_mock/arcdps_mock.exe",
+            "args": [
+                "C:/development/premium-pass-rs/target/debug/premium_pass.dll",
+                "-dx11"
+            ],
+            "cwd": "C:/tools/arcdps_mock/",
+            "preLaunchTask": "cargo build"
         }
     ]
 }

@@ -8,3 +8,4 @@ crate-type = ["cdylib"]
 
 [dependencies]
 arcdps = "0.8.0"
+base64 = "0.21.0"
