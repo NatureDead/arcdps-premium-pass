@@ -1,3 +1,5 @@
+// based on https://wiki.guildwars2.com/wiki/Talk:Chat_link_format#Quick_app_for_generating_item_codes
+
 use base64::{Engine, engine::general_purpose};
 
 pub fn decode_chat_code_for_item_or_skin(fullcode: &str) -> u32 {
